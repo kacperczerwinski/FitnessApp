@@ -1,0 +1,188 @@
+[debug] [2021-01-15T15:27:59.117Z] ----------------------------------------------------------------------
+[debug] [2021-01-15T15:27:59.119Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-15T15:27:59.120Z] CLI Version:   9.2.0
+[debug] [2021-01-15T15:27:59.120Z] Platform:      win32
+[debug] [2021-01-15T15:27:59.120Z] Node Version:  v14.15.1
+[debug] [2021-01-15T15:27:59.121Z] Time:          Fri Jan 15 2021 16:27:59 GMT+0100 (Central European Standard Time)
+[debug] [2021-01-15T15:27:59.122Z] ----------------------------------------------------------------------
+[debug] [2021-01-15T15:27:59.122Z] 
+[debug] [2021-01-15T15:27:59.131Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-15T15:27:59.132Z] > authorizing via signed-in user
+[debug] [2021-01-15T15:27:59.132Z] [iam] checking project fitnessapp2-1234f for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-01-15T15:27:59.135Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnessapp2-1234f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-01-15T15:27:59.625Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 15 Jan 2021 15:28:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=37","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-15T15:27:59.627Z] > refreshing access token with scopes: []
+[debug] [2021-01-15T15:27:59.627Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-15T15:27:59.821Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 15 Jan 2021 15:28:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-15T15:27:59.830Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f [none]
+[debug] [2021-01-15T15:28:00.302Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f 200
+[debug] [2021-01-15T15:28:00.303Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f {"projectId":"fitnessapp2-1234f","projectNumber":"234773337336","displayName":"FitnessApp2","name":"projects/fitnessapp2-1234f","resources":{"hostingSite":"fitnessapp2-1234f","realtimeDatabaseInstance":"fitnessapp2-1234f-default-rtdb"},"state":"ACTIVE"}
+[debug] [2021-01-15T15:28:00.303Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f [none]
+[debug] [2021-01-15T15:28:00.765Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f 200
+[debug] [2021-01-15T15:28:00.765Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f {"projectId":"fitnessapp2-1234f","projectNumber":"234773337336","displayName":"FitnessApp2","name":"projects/fitnessapp2-1234f","resources":{"hostingSite":"fitnessapp2-1234f","realtimeDatabaseInstance":"fitnessapp2-1234f-default-rtdb"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'fitnessapp2-1234f'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2021-01-15T15:28:00.778Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-15T15:28:00.778Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-15T15:28:00.981Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 15 Jan 2021 15:28:01 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-15T15:28:00.987Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/fitnessapp2-1234f/locations/-/instances/fitnessapp2-1234f-default-rtdb  
+ 
+[debug] [2021-01-15T15:28:01.681Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 15 Jan 2021 15:28:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-15T15:28:01.683Z] >>> HTTP REQUEST PUT https://fitnessapp2-1234f-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "schedule": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        ".indexOn": [
+          "timestamp"
+        ]
+      }
+    },
+    "meals": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "workouts": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
+
+[debug] [2021-01-15T15:28:02.225Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Fri, 15 Jan 2021 15:28:02 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  database: rules syntax for database fitnessapp2-1234f-default-rtdb is valid 
+[debug] [2021-01-15T15:28:02.228Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/fitnessapp2-1234f/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-01-15T15:28:04.560Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 15 Jan 2021 15:28:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[fitnessapp2-1234f]: beginning deploy... 
+[debug] [2021-01-15T15:28:04.588Z] Error: EPERM: operation not permitted, scandir 'C:/Users/Kacper.Czerwinski/Downloads/angular-pro-app-seed-01-firebase/angular-pro-app-seed-01-firebase/firebase-debug.log'
+    at Object.readdirSync (fs.js:1021:3)
+    at GlobSync._readdir (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:41)
+    at GlobSync._readdirInGlobStar (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:48:10)
+    at Function.globSync [as sync] (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:26:10)
+    at listFiles (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at _runDeploys (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:31:23)
+    at module.exports (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:67:12)
+    at _chain (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:40)
+    at C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:16
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-01-15T15:29:15.978Z] ----------------------------------------------------------------------
+[debug] [2021-01-15T15:29:15.979Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-15T15:29:15.980Z] CLI Version:   9.2.0
+[debug] [2021-01-15T15:29:15.980Z] Platform:      win32
+[debug] [2021-01-15T15:29:15.980Z] Node Version:  v14.15.1
+[debug] [2021-01-15T15:29:15.981Z] Time:          Fri Jan 15 2021 16:29:15 GMT+0100 (Central European Standard Time)
+[debug] [2021-01-15T15:29:15.981Z] ----------------------------------------------------------------------
+[debug] [2021-01-15T15:29:15.981Z] 
+[debug] [2021-01-15T15:29:15.987Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-15T15:29:15.987Z] > authorizing via signed-in user
+[debug] [2021-01-15T15:29:15.988Z] [iam] checking project fitnessapp2-1234f for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-01-15T15:29:15.990Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnessapp2-1234f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-01-15T15:29:16.464Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 15 Jan 2021 15:29:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=31","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-15T15:29:16.465Z] > refreshing access token with scopes: []
+[debug] [2021-01-15T15:29:16.466Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-15T15:29:16.666Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Fri, 15 Jan 2021 15:29:17 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-15T15:29:16.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f [none]
+[debug] [2021-01-15T15:29:17.147Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f 200
+[debug] [2021-01-15T15:29:17.147Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f {"projectId":"fitnessapp2-1234f","projectNumber":"234773337336","displayName":"FitnessApp2","name":"projects/fitnessapp2-1234f","resources":{"hostingSite":"fitnessapp2-1234f","realtimeDatabaseInstance":"fitnessapp2-1234f-default-rtdb"},"state":"ACTIVE"}
+[debug] [2021-01-15T15:29:17.148Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f [none]
+[debug] [2021-01-15T15:29:17.618Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f 200
+[debug] [2021-01-15T15:29:17.618Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fitnessapp2-1234f {"projectId":"fitnessapp2-1234f","projectNumber":"234773337336","displayName":"FitnessApp2","name":"projects/fitnessapp2-1234f","resources":{"hostingSite":"fitnessapp2-1234f","realtimeDatabaseInstance":"fitnessapp2-1234f-default-rtdb"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'fitnessapp2-1234f'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2021-01-15T15:29:17.629Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-15T15:29:17.629Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-15T15:29:17.825Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 15 Jan 2021 15:29:18 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-15T15:29:17.831Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/fitnessapp2-1234f/locations/-/instances/fitnessapp2-1234f-default-rtdb  
+ 
+[debug] [2021-01-15T15:29:18.362Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 15 Jan 2021 15:29:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-15T15:29:18.363Z] >>> HTTP REQUEST PUT https://fitnessapp2-1234f-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "schedule": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        ".indexOn": [
+          "timestamp"
+        ]
+      }
+    },
+    "meals": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "workouts": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
+
+[debug] [2021-01-15T15:29:19.045Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Fri, 15 Jan 2021 15:29:19 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  database: rules syntax for database fitnessapp2-1234f-default-rtdb is valid 
+[debug] [2021-01-15T15:29:19.047Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/fitnessapp2-1234f/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-01-15T15:29:20.442Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 15 Jan 2021 15:29:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[fitnessapp2-1234f]: beginning deploy... 
+[debug] [2021-01-15T15:29:20.462Z] Error: EPERM: operation not permitted, scandir 'C:/Users/Kacper.Czerwinski/Downloads/angular-pro-app-seed-01-firebase/angular-pro-app-seed-01-firebase/firebase-debug.log'
+    at Object.readdirSync (fs.js:1021:3)
+    at GlobSync._readdir (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:41)
+    at GlobSync._readdirInGlobStar (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:48:10)
+    at Function.globSync [as sync] (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:26:10)
+    at listFiles (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at _runDeploys (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:31:23)
+    at module.exports (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:67:12)
+    at _chain (C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:40)
+    at C:\Users\Kacper.Czerwinski\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:16
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
